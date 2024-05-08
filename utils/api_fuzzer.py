@@ -9,8 +9,8 @@ urllib3.disable_warnings()
 user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
 header = {"User-Agent": user_agent}
 
-dir = os.getcwd()
-with open(f"{dir}/utils/payloads/api.txt", "r") as f:
+directory = os.getcwd()
+with open(f"{directory}/utils/payloads/api.txt", "r") as f:
     api_list = (x.strip() for x in f.readlines())
 
 def api_fuzzer(domain: str, api: str) -> None:
