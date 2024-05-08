@@ -2,7 +2,6 @@ from colorama import Fore
 import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 import warnings
-import warnings
 from cryptography.utils import CryptographyDeprecationWarning
 with warnings.catch_warnings():
     warnings.filterwarnings('ignore', category=CryptographyDeprecationWarning)
